@@ -1,7 +1,4 @@
 @import "tailwindcss";
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 @layer utilities {
   .scrollbar-none::-webkit-scrollbar {
