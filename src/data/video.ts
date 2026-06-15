@@ -17,7 +17,7 @@ export const mockVideos: VideoData[] = [
     {
         id: "2",
         videoUrl: "/videos/video-2.mp4",
-        authorName: "hung_nong",
+        authorName: "van_a",
         authorImg: "/images/avatar-2.jpg",
         description: "chú vẹt thông minh",
         likesCount: 220,
@@ -30,10 +30,10 @@ export const mockVideos: VideoData[] = [
     {
         id: "3",
         videoUrl: "/videos/video-03.mp4",
-        authorName: "hung_nong",
+        authorName: "nguyen van",
         authorImg: "/images/avatar-3.jpg",
-        description: "chú mèo đáng yêu",
-        likesCount: 120,
+        description: "Người đàn ông mạnh mẽ",
+        likesCount: 330,
         audio: {
             title: "Stomp Drum Percussion",
             artist: "EnergySound",
@@ -43,10 +43,10 @@ export const mockVideos: VideoData[] = [
     {
         id: "4",
         videoUrl: "/videos/video-4.mp4",
-        authorName: "hung_nong",
+        authorName: "Tran thi B",
         authorImg: "/images/avatar-4.jpg",
-        description: "chú mèo đáng yêu",
-        likesCount: 120,
+        description: "Những chú cừu trên đồng cỏ xanh",
+        likesCount: 171,
         audio: {
             title: "Funk & Breakbeat",
             artist: "AlexGuz",
