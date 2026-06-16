@@ -110,7 +110,7 @@ export function useVideoPlayer({
         audioRef.current.muted = isMuted;
     }, [displayVolume, isMuted]);
 
-    // Lần đầu user kích hoạt audio → play ngay nếu video đang active
+    // Lần đầu user kích hoạt audio, play ngay nếu video đang active
     useEffect(() => {
         if (isAudioActivated && isActive && audioRef.current) {
             audioRef.current.play().catch(console.log);
@@ -118,7 +118,7 @@ export function useVideoPlayer({
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isAudioActivated]);
 
-    // Sync currentTime audio theo video để tránh lệch sau nhiều lần loop
+    // Sync currentTime audio theo video
     useEffect(() => {
         const video = videoRef.current;
         const audio = audioRef.current;
