@@ -65,7 +65,7 @@ function VideoCard({
                 {showIcon && (
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
                         <div className="bg-black/50 p-5 rounded-full text-white text-3xl animate-ping-once">
-                            {showIcon === "play" ? <FaPause /> : <FaPlay />}
+                            {showIcon === "play" ? <FaPlay /> : <FaPause />}
                         </div>
                     </div>
                 )}
