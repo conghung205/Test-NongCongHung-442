@@ -13,7 +13,7 @@ function VideoFeed() {
     return (
         <div
             ref={feedRef}
-            className="w-full h-full md:h-[85vh] pb-15 md:pb-0 overflow-y-scroll scroll-smooth transition-all ease-in-out duration-200 snap-y snap-mandatory scrollbar-none flex flex-col gap-0 md:gap-6"
+            className="w-full h-full md:h-[85dvh] pb-15 md:pb-0 overflow-y-scroll scroll-smooth transition-all ease-in-out duration-200 snap-y snap-mandatory scrollbar-none flex flex-col gap-0 md:gap-6"
         >
             {videos.map((video) => (
                 <div
