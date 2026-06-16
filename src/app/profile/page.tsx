@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import MainLayout from "@/components/layout/MainLayout";
+import MainLayout from "@/layout/MainLayout";
 import Image from "next/image";
 import { IoGridOutline, IoSettingsOutline } from "react-icons/io5";
 import { FiShare2, FiLock } from "react-icons/fi";

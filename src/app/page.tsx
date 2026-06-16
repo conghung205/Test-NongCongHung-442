@@ -1,5 +1,5 @@
 import VideoFeed from "@/components/video/VideoFeed";
-import MainLayout from "@/components/layout/MainLayout";
+import MainLayout from "@/layouts/MainLayout";
 
 export default function Home() {
     return (

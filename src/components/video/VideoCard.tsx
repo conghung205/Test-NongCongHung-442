@@ -57,6 +57,7 @@ function VideoCard({
                     src={video.videoUrl}
                     loop
                     muted
+                    playsInline
                     className="w-full h-full object-cover sm:rounded-2xl md:border md:border-zinc-800"
                 />
 

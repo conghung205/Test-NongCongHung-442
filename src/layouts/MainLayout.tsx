@@ -1,6 +1,6 @@
-import BottomNav from "@/components/layout/BottomNav";
-import Header from "@/components/layout/Header";
-import Sidebar from "@/components/layout/Sidebar";
+import BottomNav from "@/layouts/BottomNav";
+import Header from "@/layouts/Header";
+import Sidebar from "@/layouts/Sidebar";
 
 interface MainLayoutProps {
     children: React.ReactNode;
