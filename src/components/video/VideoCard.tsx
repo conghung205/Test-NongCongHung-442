@@ -58,7 +58,7 @@ function VideoCard({
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover sm:rounded-2xl md:border md:border-zinc-800"
+                    className="w-full h-full cursor-pointer object-cover sm:rounded-2xl md:border md:border-zinc-800"
                 />
 
                 {/* Play/Pause */}

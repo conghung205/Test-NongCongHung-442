@@ -33,11 +33,7 @@ export function useVideoPlayer({
             setShowIcon("pause");
         } else {
             videoRef.current.play().catch(console.log);
-            if (!isAudioActivated) {
-                setIsAudioActivated(true);
-            } else {
-                audioRef.current?.play().catch(console.log);
-            }
+            audioRef.current?.play().catch(console.log);
             setShowIcon("play");
         }
     };
