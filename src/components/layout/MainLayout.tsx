@@ -14,10 +14,10 @@ export default function MainLayout({
     isPadding = true,
 }: MainLayoutProps) {
     return (
-        <div className="w-full h-screen bg-zinc-950 text-white flex flex-col overflow-hidden relative">
+        <div className="w-full h-dvh bg-zinc-950 text-white flex flex-col overflow-hidden relative">
             <Header />
 
-            <div className="w-full h-[calc(100vh-64px)] flex flex-row relative">
+            <div className="w-full h-[calc(100dvh-64px)] flex flex-row relative">
                 {/* Thanh điều hướng bên cạnh */}
                 <Sidebar />
 
