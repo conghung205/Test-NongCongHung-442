@@ -128,8 +128,27 @@ export function useVideoPlayer({
                 audio.currentTime = video.currentTime;
             }
         };
+        const handleVideoSeeking = () => {
+            audio.currentTime = video.currentTime;
+
+            if (!video.paused && audio.paused) {
+                audio
+                    .play()
+                    .catch((err) =>
+                        console.log("Audio play blocked on seek:", err),
+                    );
+            }
+        };
+
         video.addEventListener("timeupdate", handleTimeSync);
-        return () => video.removeEventListener("timeupdate", handleTimeSync);
+        video.addEventListener("seeking", handleVideoSeeking);
+        return () => {
+            video.removeEventListener("timeupdate", handleTimeSync);
+            video.removeEventListener("seeking", handleVideoSeeking);
+
+            audio.pause();
+            audio.currentTime = 0;
+        };
     }, []);
 
     return {
