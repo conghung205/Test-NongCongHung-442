@@ -45,7 +45,7 @@ function VideoCard({
     return (
         <div className="w-full h-full flex items-center justify-center md:gap-1.5 md:items-end relative">
             {video.audio?.audioUrl && (
-                <audio ref={audioRef} src={video.audio.audioUrl} loop />
+                <audio ref={audioRef} src={video.audio.audioUrl} />
             )}
 
             <div
